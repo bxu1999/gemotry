@@ -1,6 +1,7 @@
 package geometry
 
 import (
+    "fmt"
     "math"
 )
 
@@ -10,5 +11,6 @@ type Point struct {
 }
 
 func (p Point) Length() float64 {
+    fmt.Println("...calling geometry package's Length() function")
     return math.Sqrt(math.Pow(p.X, 2.0) + math.Pow(p.Y, 2.0))
 }
